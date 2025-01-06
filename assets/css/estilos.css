@@ -1,0 +1,329 @@
+/* Asegúrate de que estos estilos estén al principio del archivo */
+#topbar {
+  background: #000000;
+  /* padding: 10px 0;*/
+  font-size: 14px;
+  display: block;
+  position: relative;
+  /* z-index: 1002; /* Asegura que esté por encima del navbar */
+}
+
+#topbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar-logo img {
+  height: 40px; /* Ajusta este valor según el tamaño deseado */
+  width: auto;
+  object-fit: cover;
+}
+
+#topbar .dropdown-toggle {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 4px 12px;
+  font-size: 14px;
+}
+
+#topbar .dropdown-toggle:hover,
+#topbar .dropdown-toggle:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#topbar .dropdown {
+  position: relative;
+}
+
+#topbar .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  min-width: 5rem;
+  z-index: 1003;
+}
+
+#topbar .dropdown-item {
+  color: #ffffff;
+  text-align: center;
+}
+
+#topbar .dropdown-item:hover,
+#topbar .dropdown-item:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navbar {
+  background-color: black;
+  border: none;
+  /*margin-top: 60px;*/
+  z-index: 1001; /* Ajusta este valor según sea necesario */
+}
+
+.navbar-brand {
+  color: white;
+  font-family: "Quicksand", cursive;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/*iframe de Instagram*/
+.iframe {
+  border-radius: 10px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Relación de aspecto 1:1 (cuadrado) */
+  height: 0;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: black;
+}
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+.titulo {
+  font-family: "Libre Baskerville";
+  font-weight: 100;
+}
+
+h3 {
+  font-size: small;
+}
+
+.separator {
+  height: 1px;
+  background-color: #dee2e6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: rgb(219, 241, 119);
+  --bs-tooltip-color: rgb(17, 2, 2);
+}
+
+.nav-link {
+  font-size: 12pt;
+}
+
+.collapsed .nav-link {
+  font-size: 10pt;
+}
+
+#dest {
+  width: 320px;
+}
+
+#Section-Destacados .card-img-top {
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#Contacto form label {
+  font-weight: 700;
+  color: #3b3c37;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+/*-----------------------------------------------------------------*/
+/* Instagram */
+
+.instagram-widget {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.instagram-widget iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.instagram-widget iframe::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+/*--------------------------------------------------------------------*/
+/* .carousel-item {
+  height: 100vh;
+} */
+
+.carousel-item {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item.active img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Estilos para los textos de la galería de Torres del Paine */
+#texto_galeria_torres_paine {
+  text-align: center;
+  line-height: 3.2;
+  padding: 0 50px;
+}
+
+#texto_galeria_torres_paine span {
+  display: inline-block;
+  color: #fffedc;
+}
+/* -------------------------------------------------------- */
+
+#torres_del_paine_Hero_section {
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#torres_del_paine_Hero_section .hero-image-container {
+  width: 100%;
+  height: 100%;
+}
+
+#torres_del_paine_Hero_section .hero-image {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  object-position: center;
+}
+/*---------------------------------------------------------------------------*/
+
+#titulo_torresPaine {
+  padding-bottom: 10%;
+}
+
+/*--------------------------------------------------------------------------*/
+
+#Hero_Section_Landscape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#Hero_Section_Landscape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*Formulario contacto*/
+#contact {
+  padding-right: 15%;
+}
+/*---------------------------------------------------------------------*/
+
+#texto_tours {
+  color: beige;
+  line-height: 2.5;
+  padding-right: 20px;
+  padding-left: 20px; 
+}
+/*---------------------------------------------------------------------*/
+
+.contact-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-area {
+  background: #444; /* Color de fondo */
+}
+
+.contact-left {
+  padding: 30px;
+}
+
+.contact-right {
+  padding: 30px;
+}
+
+.form-control {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-control:focus {
+  box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+  border: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
